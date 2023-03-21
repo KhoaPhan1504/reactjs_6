@@ -1,0 +1,9 @@
+.checkbox {
+    display: flex;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.checkbox span {
+    margin-left: .5rem;
+}

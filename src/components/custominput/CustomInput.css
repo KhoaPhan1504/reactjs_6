@@ -1,0 +1,77 @@
+.formcontrol-input {
+    position: relative;
+}
+
+.input-item {
+    position: relative;
+}
+
+.formcontrol-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, .5);
+    transform: translate(14px, 14px);
+    background: transparent;
+    transition: transform ease-in-out .15s;
+}
+
+.formcontrol-input label.active {
+    transform: translate(14px, -10px) scale(.88);
+    color: rgba(25, 118, 210);
+}
+
+/* .formcontrol-input label.invalid {
+    transform: translate(14px, 14px) scale(1);
+} */
+
+.formcontrol-input label.valid {
+    transform: translate(14px, -10px) scale(.88);
+}
+
+.input-item input {
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 14px;
+    background:none;
+}
+
+.input-item input.active {
+    border-color: transparent;
+}
+
+.input-item input.valid {
+    border-color: transparent;
+}
+
+.input-item fieldset {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: -10px;
+    padding: 0 8px;
+    display: none;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.input-item fieldset.active {
+    display: initial;
+    border: 2px solid rgba(25, 118, 210);
+}
+
+.input-item fieldset.valid {
+    border: 1px solid rgba(0, 0, 0, .25);
+    display: initial;
+}
+
+.input-item fieldset span{
+    padding: 0 3px;
+    visibility: hidden;
+}
